@@ -39,7 +39,7 @@ export const stakingClient = new ApolloClient({
 export const blockClient = new ApolloClient({
   link: new HttpLink({
     // uri: 'https://api.thegraph.com/subgraphs/name/blocklytics/ethereum-blocks',
-    uri: 'http://54.214.249.115:8000/subgraphs/name/zhangwenhua-tron/tron-blocks',
+    uri: 'http://54.214.249.115:8000/subgraphs/name/zhangwenhua-tron/sunswap-blocks',
   }),
   cache: new InMemoryCache(),
 })
