@@ -4,7 +4,8 @@ import { HttpLink } from 'apollo-link-http'
 
 export const client = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://api.thegraph.com/subgraphs/name/ianlapham/uniswapv2',
+    // uri: 'https://api.thegraph.com/subgraphs/name/ianlapham/uniswapv2',
+    uri: 'http://54.214.249.115:8000/subgraphs/name/zhangwenhua-tron/sunswap',
   }),
   cache: new InMemoryCache(),
   shouldBatch: true,
@@ -12,7 +13,8 @@ export const client = new ApolloClient({
 
 export const healthClient = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://api.thegraph.com/index-node/graphql',
+    // uri: 'https://api.thegraph.com/index-node/graphql',
+    uri: 'http://54.214.249.115:8030/graphql',
   }),
   cache: new InMemoryCache(),
   shouldBatch: true,
@@ -36,7 +38,8 @@ export const stakingClient = new ApolloClient({
 
 export const blockClient = new ApolloClient({
   link: new HttpLink({
-    uri: 'https://api.thegraph.com/subgraphs/name/blocklytics/ethereum-blocks',
+    // uri: 'https://api.thegraph.com/subgraphs/name/blocklytics/ethereum-blocks',
+    uri: 'http://54.214.249.115:8000/subgraphs/name/zhangwenhua-tron/tron-blocks',
   }),
   cache: new InMemoryCache(),
 })

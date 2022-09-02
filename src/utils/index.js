@@ -112,6 +112,7 @@ export function getTimestampsForChanges() {
   const t2 = utcCurrentTime.subtract(2, 'day').startOf('minute').unix()
   const tWeek = utcCurrentTime.subtract(1, 'week').startOf('minute').unix()
   return [t1, t2, tWeek]
+  // return [1587098031, 1587011631, 1586493231]
 }
 
 export async function splitQuery(query, localClient, vars, list, skipCount = 100) {
